@@ -15,14 +15,14 @@
 <body>
 
 <!--タブ-->
-<ul class="group-tab">
+<!-- <ul class="group-tab">
     <li class="tab-a tab is-active" value="a">Tab-A</li>
     <li class="tab-b tab" value="b">Tab-B</li>
     <li class="tab-c tab" value="c">Tab-C</li>
-</ul>
+</ul> -->
 
 <!--タブを切り替えて表示するコンテンツ-->
-<div class="panel-group">
+<!-- <div class="panel-group">
     <div class="panel-a is-show">Content-A
         <p class="panel-a is-show">1</p>
         <p class="panel-a is-show">2</p>
@@ -35,7 +35,7 @@
         <p class="panel panel-c">5</p>
         <p class="panel panel-c">6</p>
     </div>
-</div>
+</div> -->
 
 <style>
 /* .group-tab{
@@ -132,7 +132,12 @@
     </nav>
 </header>
 <body>
-    <div class="carousel slide carousel-fade w-100" data-ride="carousel">
+    <div class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
               <img src="http://makan.under.jp/gold/wp-content/uploads/2019/09/ring2-1.jpg" class="d-block w-100 img-fluid" alt="...">
@@ -142,13 +147,13 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="http://makan.under.jp/gold/wp-content/uploads/2019/09/ring1.jpg" class="d-block w-100" alt="...">
+            <img src="http://makan.under.jp/gold/wp-content/uploads/2019/09/ring1.jpg" class="d-block w-100 img-fluid" alt="...">
           </div>
           <!-- <div class="carousel-item">
             <img src="" class="d-block w-100" alt="...">
           </div> -->
         </div>
-        <p><img src="http://makan.under.jp/gold/wp-content/plugins/smart-slider-3/library/media/plugins/widgetshadow/shadow/shadow/shadow/dark.png" class="w-100" alt=""></p>
+        <!-- <p><img src="http://makan.under.jp/gold/wp-content/plugins/smart-slider-3/library/media/plugins/widgetshadow/shadow/shadow/shadow/dark.png" class="w-100" alt=""></p> -->
       </div>
       
     <section class="container text-center">
@@ -167,8 +172,8 @@
                 <img class="img-fluid" src="http://makan.under.jp/gold/wp-content/uploads/2019/09/ring1.jpg" alt="">
             </div>
             <div class="col-md-6 text-center">
-                <h3>Bridal Ring</h3>
-                <p>ブライダルリング</p>
+                <h3 class="my-2 font-weight-bold">Bridal Ring</h3>
+                <h4>ブライダルリング</h4>
                 <p>毎日身に着けるものだから。<br>
     
                     わたしとあなたに似合う最高の指輪を。</p>
@@ -181,8 +186,8 @@
                 <img class="img-fluid" src="http://makan.under.jp/gold/wp-content/uploads/2019/09/ring1.jpg" alt="">
             </div>
             <div class="col-md-6 text-center">
-                <h3>Order Made</h3>
-                <p>オーダーメイド</p>
+                <h3 class="my-2 font-weight-bold">Order Made</h3>
+                <h4>オーダーメイド</h4>
                 <p>職人がひとつひとつ手作り。<br>
     
                     毎日身に着けるものだからこそ、
@@ -198,8 +203,8 @@
             </div>
             <div class="col-md-6 text-center">
                 <div class="h-auto">
-                    <h3>Gem Identification Report</h3>
-                    <p>宝石鑑別・グレーディング（鑑定）</p>
+                    <h3 class="my-2 font-weight-bold">Gem Identification Report</h3>
+                    <h4>宝石鑑別・グレーディング（鑑定）</h4>
                 </div>
                 
                 <p class="h-auto">米国宝石学会(GIA)鑑定士(GG)
@@ -260,8 +265,8 @@
                 <img class="img-fluid" src="http://makan.under.jp/gold/wp-content/uploads/2019/09/ring1.jpg" alt="">
             </div>
             <div class="col-md-6 text-center">
-                <h3>After Care</h3>
-                <p>アフターケア</p>
+                <h3 class="my-2 font-weight-bold">After Care</h3>
+                <h4>アフターケア</h4>
                 <p></p>
                 <p><a href="" class="btn btn-outline-success">view more</a></p>
             </div>
