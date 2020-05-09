@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <!-- 必須のmetaタグ -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ゴールド宝飾</title>
+    <!-- BootstrapのCSSファイル -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&amp;display=swap&amp;subset=japanese" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<!--タブ-->
+<ul class="group-tab">
+    <li class="tab-a tab is-active" value="a">Tab-A</li>
+    <li class="tab-b tab" value="b">Tab-B</li>
+    <li class="tab-c tab" value="c">Tab-C</li>
+</ul>
+
+<!--タブを切り替えて表示するコンテンツ-->
+<div class="panel-group">
+    <div class="panel-a is-show">Content-A
+        <p class="panel-a is-show">1</p>
+        <p class="panel-a is-show">2</p>
+    </div>
+    <div class="panel-b panel">Content-B
+        <p class="panel panel-b">3</p>
+        <p class="panel panel-b">4</p>
+    </div>
+    <div class="panel panel-c">Content-C
+        <p class="panel panel-c">5</p>
+        <p class="panel panel-c">6</p>
+    </div>
+</div>
+
+<style>
+/* .group-tab{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+.tab{
+    flex-grow: 1;
+    padding:5px;
+    list-style:none;
+    border:solid 1px #CCC;
+    text-align:center;
+    cursor:pointer;
+}
+.panel-group{
+    height:100px;
+    border:solid 1px #CCC;
+    border-top:none;
+    background:#eee;
+}
+.hide{
+    display:none;
+}
+.tab.is-active{
+    color:#535353;
+    transition: all 0.2s ease-out;
+} */
+/* .is-show{
+    display:block;
+} */
+
+.group-tab{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+.tab{
+    list-style:none;
+    cursor:pointer;
+    margin: 0 10px;
+}
+.panel{
+    display:none;
+}
+.tab.is-active{
+    color:#535353;
+    transition: all 0.2s ease-out;
+}
+</style>
+
+<script>
+    jQuery(function($){
+    $("[class^='tab").click(function(){
+        $('.is-active').removeClass('is-active');
+        $(this).addClass('is-active');
+        $('.is-show').removeClass('is-show').css('display','none');
+            var cn =  $(this).attr("class").split(" ")[0];
+            var cn1 = cn.split("-",2);
+            var panel = 'panel-' + cn1[1];
+        $('.' + panel).fadeIn("slow").addClass('is-show');
+    });
+});
+</script>
+
+<header class="nav-bar bg-light">
+    <div class="text-center"><img src="http://makan.under.jp/gold/wp-content/uploads/2019/10/logo_resize100.png" alt=""></div>
+    <p class="text-center">ゴールド宝飾</p>
+    <nav class="sticky">
+        <ul class="nav nav-pills justify-content-center">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">Bridal Ring</a>
+                <ul class="dropdown-menu ">
+                    <li class="dropdown-item"><a href="">婚約指輪</a></li>
+                    <li class="dropdown-item"><a href="">結婚指輪</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">Order Made</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="">Casual Ring</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Neckless</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Bracelet</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Earrings</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <div class="carousel slide carousel-fade w-100" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="http://makan.under.jp/gold/wp-content/uploads/2019/09/ring2-1.jpg" class="d-block w-100 img-fluid" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>スライド１</h3>
+                <p>teksit</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="http://makan.under.jp/gold/wp-content/uploads/2019/09/ring1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <!-- <div class="carousel-item">
+            <img src="" class="d-block w-100" alt="...">
+          </div> -->
+        </div>
+        <p><img src="http://makan.under.jp/gold/wp-content/plugins/smart-slider-3/library/media/plugins/widgetshadow/shadow/shadow/shadow/dark.png" class="w-100" alt=""></p>
+      </div>
+      
+    <section class="container text-center">
+        <h2 class="h-25">About</h2>
+        <p class="h-75">それぞれのシーンに合った世界にひとつだけのオリジナルリングを作成します
+            <br>
+        創業から４５年の経験で培った技術を活かし
+        <br>当店の職人が一人ひとりのニーズをしっかりと聞き世界に一つだけの指輪を制作いたします。
+            
+            </p>
+    </section>
+    
+    <section class="container">
+        <div class="row col-md-12 p-3 p-sm-5 p-md-5 p-lg-5 p-xl-5 border" style="background-color: #d6ccad;">
+            <div class="col-md-6">
+                <img class="img-fluid" src="http://makan.under.jp/gold/wp-content/uploads/2019/09/ring1.jpg" alt="">
+            </div>
+            <div class="col-md-6 text-center">
+                <h3>Bridal Ring</h3>
+                <p>ブライダルリング</p>
+                <p>毎日身に着けるものだから。<br>
+    
+                    わたしとあなたに似合う最高の指輪を。</p>
+                <p><a href="" class="btn btn-outline-success">view more</a></p>
+            </div>
+        </div>
+    
+        <div class="row col-md-12 p-3 p-sm-5 p-md-5 p-lg-5 p-xl-5 bg-secondly d-flex flex-row-reverse border">
+            <div class="col-md-6">
+                <img class="img-fluid" src="http://makan.under.jp/gold/wp-content/uploads/2019/09/ring1.jpg" alt="">
+            </div>
+            <div class="col-md-6 text-center">
+                <h3>Order Made</h3>
+                <p>オーダーメイド</p>
+                <p>職人がひとつひとつ手作り。<br>
+    
+                    毎日身に着けるものだからこそ、
+                    
+                    世界に一つだけのものを。</p>
+                <p><a href="" class="btn btn-outline-success">view more</a></p>
+            </div>
+        </div>
+    
+        <div class="row col-md-12 p-2 p-md-5" style="background-color: #daccad;">
+            <div class="col-md-6 m-sm-1 m-md-0">
+                <img class="img-fluid" src="http://makan.under.jp/gold/wp-content/uploads/2019/11/宝石鑑別-2.jpg" alt="">
+            </div>
+            <div class="col-md-6 text-center">
+                <div class="h-auto">
+                    <h3>Gem Identification Report</h3>
+                    <p>宝石鑑別・グレーディング（鑑定）</p>
+                </div>
+                
+                <p class="h-auto">米国宝石学会(GIA)鑑定士(GG)
+    
+                    による正確な検査で<br>宝石の
+                    
+                    鑑別・鑑定をおこないます。</p>
+                <p class="h-25"><a href="" class="btn btn-outline-success">view more</a></p>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="sec-title">
+            <h1 class="text-center">item</h1>
+        </div>
+        <div class="">
+            <div class="w-100 mb-2 d-flex flex-column flex-md-row justify-content-between">
+                <div class="px-4">
+                    <p><img class="img-fluid" src="http://makan.under.jp/gold/wp-content/uploads/2019/11/指輪丸.png" alt=""></p>
+                    <div class="item-link text-center text-md-right">
+                        <p>リング</p>
+                        <p><a href="">詳細を見る</a></p>
+                    </div>
+                </div>
+                <div class="px-4">
+                    <p><img class="img-fluid" src="http://makan.under.jp/gold/wp-content/uploads/2019/11/ネックレス丸.png" alt=""></p>
+                    <div class="item-link text-center text-md-left">
+                        <p>ネックレス</p>
+                        <p><a href="">詳細を見る</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100 mb-2 d-flex flex-column flex-md-row">
+                <div class="px-4">
+                    <p><img class="img-fluid" src="http://makan.under.jp/gold/wp-content/uploads/2019/11/ブレスレット丸.png" alt=""></p>
+                    <div class="item-link text-center text-md-right">
+                        <p>ブレスレット</p>
+                        <p><a href="">詳細を見る</a></p>
+                    </div>
+                </div>
+                <div class="px-4">
+                    <p><img class="img-fluid" src="http://makan.under.jp/gold/wp-content/uploads/2019/11/ピアス丸.png" alt=""></p>
+                    <div class="item-link text-center text-md-left">
+                        <p>ピアス</p>
+                        <p><a href="">詳細を見る</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="sec-title">
+            <h1 class="text-center">After Service</h1>
+        </div>
+        <div class="row col-md-12 p-3 p-sm-5 p-md-5 p-lg-5 p-xl-5 bg-secondly d-flex border">
+            <div class="col-md-6">
+                <img class="img-fluid" src="http://makan.under.jp/gold/wp-content/uploads/2019/09/ring1.jpg" alt="">
+            </div>
+            <div class="col-md-6 text-center">
+                <h3>After Care</h3>
+                <p>アフターケア</p>
+                <p></p>
+                <p><a href="" class="btn btn-outline-success">view more</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="sec-title">
+            <h1 class="text-center">Shop Info</h1>
+        </div>
+        <div class="jumbotron shopinfo">
+            <div class="container text-center">
+                <h2 class="mb-5">店舗情報</h2>
+                <p>
+                    ゴールド宝飾の店舗情報です。<br>
+                    店舗までのアクセスやよくあるご質問を掲載しています。<br>
+                    住所：〒901-0156 沖縄県那覇市田原1丁目17-6 <br>
+                    営業時間：10:00～20:00 <br> 
+                    定休日：日曜日<br>
+                    電話番号：098-852-1620 <br>
+                </p>
+            </div>
+        </div>
+        
+    </section>
+    
+
+</body>
+
+<style>
+     .shopinfo { 
+         background:url("http://makan.under.jp/gold/wp-content/uploads/2019/11/外観.jpg") center no-repeat; background-size: cover;
+         }
+</style>
+
+<footer class="jumbotron px-3" style="background-color: #3f3c41; color: #999999;">
+    <p>© 2020年 ゴールド宝飾. All Rights Reserved.</p>
+</footer>
+<!-- 必ずjQuery、Popper.js、Bootstrapの順で -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script>
+    $(".carousel").carousel({
+        interval: 3000,
+    });
+
+</script>
+
+<style>
+    *{
+        font-family: 'Noto Serif JP','arial black', 'avant garde';
+        font-weight: 700;
+        box-sizing: border-box;
+    }
+</style>
+</body>
+</html>
