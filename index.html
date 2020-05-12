@@ -104,31 +104,101 @@
 <header class="nav-bar bg-light">
     <div class="text-center"><img src="http://makan.under.jp/gold/wp-content/uploads/2019/10/logo_resize100.png" alt=""></div>
     <p class="text-center">ゴールド宝飾</p>
-    <nav class="sticky">
-        <ul class="nav nav-pills justify-content-center">
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-around" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <!-- <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li> -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Bridal Ring
+                </a>
+                <div class="dropdown-menu border-0" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">婚約指輪</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">結婚指輪</a>
+                </div>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Order Made</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Casual Ring</a>
+              </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Neckless
+                </a>
+                <div class="dropdown-menu border-0" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">ダイヤ</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">カラーストーン</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">パール</a>
+                </div>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Bracelet
+              </a>
+              <div class="dropdown-menu border-0" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">ダイヤ</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">カラーストーン</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">パール</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Earrings</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+
+    <!-- <nav class="sticky-top">
+        <ul class="navbar nav-pills justify-content-center">
+            <a href="" class="navbar-brand"></a>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="item.html" data-toggle="dropdown">Bridal Ring</a>
-                <ul class="dropdown-menu ">
+                <ul class="dropdown-menu border-0">
                     <li class="dropdown-item"><a href="">婚約指輪</a></li>
                     <li class="dropdown-item"><a href="">結婚指輪</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">Order Made</a>
+                <a class="nav-link" href="">Order Made</a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="">Casual Ring</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="">Neckless</a>
+                <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">Neckless</a>
+                <ul class="dropdown-menu border-0">
+                    <li class="dropdown-item"><a href="">ダイヤ</a></li>
+                    <li class="dropdown-item"><a href="">カラーストーン</a></li>
+                    <li class="dropdown-item"><a href="">パール</a></li>
+                </ul>
             </li>
             <li class="nav-item">
-                <a href="" class="nav-link">Bracelet</a>
+                <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Bracelet</a>
+                <ul class="dropdown-menu border-0">
+                    <li class="dropdown-item"><a href="">ダイヤ</a></li>
+                    <li class="dropdown-item"><a href="">カラーストーン</a></li>
+                    <li class="dropdown-item"><a href="">パール</a></li>
+                </ul>
             </li>
             <li class="nav-item">
                 <a href="" class="nav-link">Earrings</a>
             </li>
         </ul>
+        <button class="b"></button> -->
     </nav>
 </header>
 <body>
@@ -139,7 +209,10 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
           </ol>
         <div class="carousel-inner">
-          <div class="carousel-item active">
+            <div class="carousel-item active">
+                <img src="img/dancingstone.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
               <img src="http://makan.under.jp/gold/wp-content/uploads/2019/09/ring2-1.jpg" class="d-block w-100 img-fluid" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h3>スライド１</h3>
@@ -149,15 +222,13 @@
           <div class="carousel-item">
             <img src="http://makan.under.jp/gold/wp-content/uploads/2019/09/ring1.jpg" class="d-block w-100 img-fluid" alt="...">
           </div>
-          <!-- <div class="carousel-item">
-            <img src="" class="d-block w-100" alt="...">
-          </div> -->
+          
         </div>
         <!-- <p><img src="http://makan.under.jp/gold/wp-content/plugins/smart-slider-3/library/media/plugins/widgetshadow/shadow/shadow/shadow/dark.png" class="w-100" alt=""></p> -->
       </div>
       
     <section class="container text-center">
-        <h2 class="h-25 mb-3">About</h2>
+        <h2 class="h-25 mb-3 font-weight-bold">About</h2>
         <p class="h-75">それぞれのシーンに合った世界にひとつだけのオリジナルリングを作成します
             <br>
         創業から４５年の経験で培った技術を活かし
@@ -218,10 +289,10 @@
     </section>
     <section class="container">
         <div class="sec-title mb-3">
-            <h1 class="text-center">item</h1>
+            <h1 class="text-center font-weight-bold">Item</h1>
         </div>
         <div class="">
-            <div class="w-100 mb-2 d-flex flex-column flex-md-row justify-content-between">
+            <div class="w-100 mb-2 d-flex flex-row flex-md-row justify-content-between">
                 <div class="px-4">
                     <p><img class="img-fluid" src="http://makan.under.jp/gold/wp-content/uploads/2019/11/指輪丸.png" alt=""></p>
                     <div class="item-link text-center text-md-right">
@@ -237,7 +308,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-100 mb-2 d-flex flex-column flex-md-row">
+            <div class="w-100 mb-2 d-flex flex-row flex-md-row">
                 <div class="px-4">
                     <p><img class="img-fluid" src="http://makan.under.jp/gold/wp-content/uploads/2019/11/ブレスレット丸.png" alt=""></p>
                     <div class="item-link text-center text-md-right">
@@ -258,7 +329,7 @@
 
     <section class="container mb-4">
         <div class="sec-title mb-3">
-            <h1 class="text-center">After Service</h1>
+            <h1 class="text-center font-weight-bold">After Service</h1>
         </div>
         <div class="col-md-12 p-3 p-sm-5 p-md-5 p-lg-5 p-xl-5 bg-secondly d-flex flex-column flex-md-row border">
             <div class="col-md-6">
@@ -309,11 +380,17 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="js/dropdown-hover.js"></script>
 <script>
-    $(".carousel").carousel({
-        interval: 3000,
-    });
 
+// カルーセル
+$(".carousel").carousel({
+    interval: 3000,
+});
+
+// ドロップダウンメニューホバー
+$.fn.bootstrapDropdownHover({
+});
 </script>
 
 <style>
