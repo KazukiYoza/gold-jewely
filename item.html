@@ -16,35 +16,66 @@
     <header class="nav-bar bg-light">
         <div class="text-center"><img src="http://makan.under.jp/gold/wp-content/uploads/2019/10/logo_resize100.png" alt=""></div>
         <p class="text-center">ゴールド宝飾</p>
-        <nav class="sticky">
-            <ul class="nav nav-pills justify-content-center">
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <!-- <a class="navbar-brand" href="#">ゴールド宝飾</a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-around" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <!-- <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li> -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">Bridal Ring</a>
-                    <ul class="dropdown-menu ">
-                        <li class="dropdown-item"><a href="">婚約指輪</a></li>
-                        <li class="dropdown-item"><a href="">結婚指輪</a></li>
-                    </ul>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Bridal Ring
+                    </a>
+                    <div class="dropdown-menu border-0" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">婚約指輪</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">結婚指輪</a>
+                    </div>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Order Made</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Casual Ring</a>
+                  </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">Order Made</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Neckless
+                    </a>
+                    <div class="dropdown-menu border-0" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">ダイヤ</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">カラーストーン</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">パール</a>
+                    </div>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Bracelet
+                  </a>
+                  <div class="dropdown-menu border-0" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">ダイヤ</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">カラーストーン</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">パール</a>
+                  </div>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="">Casual Ring</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">Neckless</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">Bracelet</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">Earrings</a>
-                </li>
-            </ul>
+                    <a class="nav-link" href="#">Earrings</a>
+                  </li>
+              </ul>
+            </div>
         </nav>
     </header>
 <div class="container text-center">
-    <h2 class="h-25 mb-3">Bridal Ring</h2>
+    <h2 class="h-25 my-3 font-weight-bold">Bridal Ring</h2>
     <ul class="group-tab w-50 mx-auto my-2 my-md-5 d-flex justify-content-space-around">
         <li class="tab-a tab is-active">婚約指輪</li>
         <li class="tab-b tab">結婚指輪</li>
@@ -57,7 +88,7 @@
 <div class="container text-center">
     <div class="panel-group">
         <div class="panel-a is-show">
-            <h2 class="bg-primary">婚約指輪</h2>
+            <h2 class="bg-primary p-3">婚約指輪</h2>
             <div class="d-flex flex-row justify-content-start flex-wrap">
                 <a href="#" class="col-6 col-md-4 my-2 p-1 p-md-2">
                     <div class="card shadow shadow p-0">
@@ -116,7 +147,7 @@
         </div>
 
         <div class="panel-b panel">
-            <h2 class="bg-success">結婚指輪</h2>
+            <h2 class="bg-success p-3">結婚指輪</h2>
             <div class="d-flex flex-row justify-content-start flex-wrap">
                 <a href="#" class="col-6 col-md-4 my-2 p-1 p-md-2">
                     <div class="card shadow p-0">
@@ -187,6 +218,7 @@
     padding: 0;
 }
 .tab{
+    color: rgb(175, 175, 175);
     list-style:none;
     cursor:pointer;
     margin: 0 10px;
@@ -195,11 +227,8 @@
     display:none;
 }
 .tab.is-active{
-    background-color: #acacac;
-    color: white;
-    padding: 7px 14px;
-    border-radius: 10px;
-    transition: all 0.2s ease-out;
+    /* background-color: #acacac; */
+    color: black;
 }
 
 /* 商品ブロック */
@@ -235,12 +264,14 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="js/dropdown-hover.js"></script>
 
 <script>
     $(".carousel").carousel({
         interval: 3000,
     });
-
+    $.fn.bootstrapDropdownHover({
+});
 </script>
 
 <style>
